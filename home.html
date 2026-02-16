@@ -10,6 +10,7 @@
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="home.css" />
+    <script src="mobile-navbar.js"></script>
   </head>
   <body>
     <!-- Layout Computer -->
@@ -20,121 +21,168 @@
             <li class="page-item active">
               <a class="page-text" href="#">Home</a>
             </li>
-            <li class="page-item"><a class="page-text" href="#">Boletim</a></li>
-            <li class="page-item">
+            <li class="page-item can-hover">
+              <a class="page-text" href="#">Boletim</a>
+            </li>
+            <li class="page-item can-hover">
               <a class="page-text" href="#">Observações</a>
             </li>
-            <li class="page-item">
+            <li class="page-item can-hover">
               <a class="page-text" href="#">Notificações</a>
             </li>
-            <li class="page-item"><a class="page-text" href="#">Conta</a></li>
+            <li class="page-item can-hover">
+              <a class="page-text" href="#">Conta</a>
+            </li>
           </ul>
         </nav>
       </aside>
 
       <div class="w-100 m-5">
         <header class="d-flex w-100 justify-content-between">
-            <div class="lh-1">
-                <p class="fs-5 fw-bold">Portal do Estudante</p>
-                <p class="fs-5 text-primary"><span class="fw-bold">Quarta-Feira</span>, 04 Fev 2026</p>
+          <div class="lh-1">
+            <p class="fs-5 fw-bold">Portal do Estudante</p>
+            <p class="fs-5 text-primary">
+              <span class="fw-bold">Quarta-Feira</span>, 04 Fev 2026
+            </p>
+          </div>
+          <div class="d-flex">
+            <img
+              class="icon m-3"
+              src="assets/notificao-icon.svg"
+              alt="Notificações Icon"
+            />
+            <img
+              class="icon m-3"
+              src="assets/mensagens-icon.svg"
+              alt="Mensagens Icon"
+            />
+            <div class="bg-primary box-name m-3">
+              <p class="fs-4 fw-bold text-secondary">RE</p>
             </div>
-            <div class="d-flex">
-                <img class="icon m-3" src="assets/notificao-icon.svg" alt="Notificações Icon">
-                <img class="icon m-3" src="assets/mensagens-icon.svg" alt="Mensagens Icon">
-                <div class="bg-primary box-name m-3">
-                    <p class="fs-4 fw-bold text-secondary">RE</p>
-                </div>
-                <p class="m-3 fs-5 fw-bold text-primary">Rahquel Emídio</p>
-            </div>
+            <p class="m-3 fs-5 fw-bold text-primary">Rahquel Emídio</p>
+          </div>
         </header>
         <main>
-            <div class="box-one d-flex justify-content-between mb-5">
-                <div class="ms-5">
-                    <h1 class="fs-1 fw-bold">Olá, Rahquel!</h1>
-                    <p class="fs-3">Pronto para começar seu dia dando alguns<br>feedbacks?</p>
+          <div class="box-one d-flex justify-content-between mb-5">
+            <div class="ms-5">
+              <h1 class="fs-1 fw-bold">Olá, Rahquel!</h1>
+              <p class="fs-3">
+                Pronto para começar seu dia dando alguns<br />feedbacks?
+              </p>
+            </div>
+            <img
+              class="teacher"
+              src="assets/professora-figure.svg"
+              alt="Professora figure"
+            />
+          </div>
+
+          <div class="box-container d-flex justify-content-around">
+            <div class="box-two">
+              <h2 class="fs-4 fw-bold text-center">Minhas Turmas</h2>
+              <div>
+                <div class="color-container d-flex">
+                  <div class="pink-container d-flex">
+                    <div class="pink-box"></div>
+                    <p class="correction-text ms-1">Correções Pendentes</p>
+                  </div>
+                  <div class="green-container d-flex ms-4">
+                    <div class="green-box"></div>
+                    <p class="correction-text ms-1">Corrigidos</p>
+                  </div>
                 </div>
-                <img class="teacher" src="assets/professora-figure.svg" alt="Professora figure">
+
+                <div class="turma-container">
+                  <div class="turma-box">
+                    <h3 class="correction-text">1º Ano - Anatomia</h3>
+                    <p class="correction-text">Quantidade de Alunos - 25</p>
+                  </div>
+                  <div class="turma-box-green">
+                    <h3 class="correction-text">1º Ano - Anatomia</h3>
+                    <p class="correction-text">Quantidade de Alunos - 25</p>
+                  </div>
+                  <div class="turma-box">
+                    <h3 class="correction-text">1º Ano - Anatomia</h3>
+                    <p class="correction-text">Quantidade de Alunos - 25</p>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <div class="box-container d-flex justify-content-around">
-                <div class="box-two">
-                    <h2 class="fs-4 fw-bold text-center">Minhas Turmas</h2>
-                    <div>
-                        <div class="color-container d-flex">
-                            <div class="pink-container d-flex">
-                                <div class="pink-box"></div>
-                                <p class="correction-text ms-1">Correções Pendentes</p>
-                            </div>
-                            <div class="green-container d-flex ms-4">
-                                <div class="green-box"></div>
-                                <p class="correction-text ms-1">Corrigidos</p>
-                            </div>
-                        </div>
-
-                        <div class="turma-container">
-                            <div class="turma-box">
-                                <h3 class="correction-text">1º Ano - Anatomia</h3>
-                                <p class="correction-text">Quantidade de Alunos - 25</p>
-                            </div>
-                            <div class="turma-box-green">
-                                <h3 class="correction-text">1º Ano - Anatomia</h3>
-                                <p class="correction-text">Quantidade de Alunos - 25</p>
-                            </div>
-                            <div class="turma-box">
-                                <h3 class="correction-text">1º Ano - Anatomia</h3>
-                                <p class="correction-text">Quantidade de Alunos - 25</p>
-                            </div>
-                        </div>
+            <div class="box-column w-75 ms-4">
+              <div class="box-three">
+                <h2 class="fs-4 fw-bold text-center">Notas pendentes</h2>
+                <div class="d-flex check-list">
+                  <div>
+                    <div class="d-flex">
+                      <div class="box-empty"></div>
+                      <p class="ms-2 fw-bold">Anatomia - Turma 2º G</p>
                     </div>
+                    <div class="d-flex">
+                      <div class="box-empty"></div>
+                      <p class="ms-2 fw-bold">Bioética - Turma 2º H</p>
+                    </div>
+                    <div class="d-flex">
+                      <div class="box-empty"></div>
+                      <p class="ms-2 fw-bold">Genética - Turma 2º I</p>
+                    </div>
+                  </div>
+                  <div class="ms-5">
+                    <div class="d-flex">
+                      <div class="box-empty"></div>
+                      <p class="ms-2 fw-bold">Anatomia - Turma 2º G</p>
+                    </div>
+                    <div class="d-flex">
+                      <div class="box-empty"></div>
+                      <p class="ms-2 fw-bold">Bioética - Turma 2º H</p>
+                    </div>
+                    <div class="d-flex">
+                      <div class="box-empty"></div>
+                      <p class="ms-2 fw-bold">Genética - Turma 2º I</p>
+                    </div>
+                  </div>
                 </div>
+              </div>
 
-                <div class="box-column w-75 ms-4">
-                    <div class="box-three">
-                        <h2 class="fs-4 fw-bold text-center">Notas pendentes</h2>
-                        <div class="d-flex check-list">
-                            <div>
-                                <div class="d-flex">
-                                    <div class="box-empty"></div>
-                                    <p class="ms-2 fw-bold">Anatomia - Turma 2º G</p>
-                                </div>
-                                <div class="d-flex">
-                                    <div class="box-empty"></div>
-                                    <p class="ms-2 fw-bold">Bioética - Turma 2º H</p>
-                                </div>
-                                <div class="d-flex">
-                                    <div class="box-empty"></div>
-                                    <p class="ms-2 fw-bold">Genética - Turma 2º I</p>
-                                </div>
-                            </div>
-                            <div class="ms-5">
-                                <div class="d-flex">
-                                    <div class="box-empty"></div>
-                                    <p class="ms-2 fw-bold">Anatomia - Turma 2º G</p>
-                                </div>
-                                <div class="d-flex">
-                                    <div class="box-empty"></div>
-                                    <p class="ms-2 fw-bold">Bioética - Turma 2º H</p>
-                                </div>
-                                <div class="d-flex">
-                                    <div class="box-empty"></div>
-                                    <p class="ms-2 fw-bold">Genética - Turma 2º I</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="box-four">
-                        <h2 class="fs-4 fw-bold text-center">Notas pendentes</h2>
-                    </div>
-                </div>
+              <div class="box-four">
+                <h2 class="fs-4 fw-bold text-center">Notas pendentes</h2>
+              </div>
             </div>
+          </div>
         </main>
       </div>
     </section>
 
     <!-- Layout Mobile -->
     <section
-      class="d-flex flex-column align-items-center vh-100 w-100 d-lg-none text-primary justify-content-center"
-    ></section>
+      class="vh-100 w-100 d-lg-none"
+    >
+      <header>
+        <nav class="text-secondary">
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li class="page-item active">
+                <a class="page-text" href="#">Home</a>
+                </li>
+                <li class="page-item can-hover">
+                <a class="page-text" href="#">Boletim</a>
+                </li>
+                <li class="page-item can-hover">
+                <a class="page-text" href="#">Observações</a>
+                </li>
+                <li class="page-item can-hover">
+                <a class="page-text" href="#">Notificações</a>
+                </li>
+                <li class="page-item can-hover">
+                <a class="page-text" href="#">Conta</a>
+                </li>
+            </ul>
+        </nav>
+      </header>
+    </section>
   </body>
 </html>
