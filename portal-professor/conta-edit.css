@@ -59,7 +59,7 @@ ul{
 .account-card{
     background-color: white;
     width: 50%;
-    height: 400px;
+    height: 600px;
     border-radius: 20px;
     box-shadow: 5px 5px 8px #aaaaaa;
     padding: 20px;
@@ -100,7 +100,7 @@ ul{
 
 .edit-button{
     width: 20%;
-    height: 60%;
+    height: 40%;
     padding: 10px;
     border-radius: 30px;
     background-color: #CC2a41;
